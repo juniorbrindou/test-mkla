@@ -15,11 +15,11 @@ class GitFile{
 
     read(){
         return new Promise((resolve, reject)=>{
-            axios.get('https://api.github.com/repos/sylvanuskla/test/contents/' + this.name + '?ref=main', {
+            axios.get('https://api.github.com/repos/225junior/test-mkla/contents/' + this.name + '?ref=main', {
                 headers:{
                     'Accept':'application/vnd.github.v3+json',
                     'Content-Type': 'application/json; charset=utf-8',
-                    'Authorization':'Bearer ',
+                    'Authorization':'Bearer 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',
                     'User-Agent': 'nodejs'
                 }
             })
